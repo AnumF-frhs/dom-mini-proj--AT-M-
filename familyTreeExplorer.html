@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+
+    <div id="grandparent">
+  <div id="parent">
+    <p id="child">I am the child</p>
+  </div>
+</div>
+
+
+<script>
+
+
+const child = document.getElementById("child");
+const parents = child.parentElement;
+console.log(parents.id);
+
+const grandparent = parents.parentElement;
+console.log(grandparent.id);
+
+parents.style.backgroundColor = "lightblue";
+grandparent.style.backgroundColor = "lightgreen";
+
+console.log(child.parentElement.parentElement.id);
+
+</script>    
+</body>
+</html>
