@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="profile">
+  <h2 id="profileName">Name</h2>
+  <img id="avatar" alt="placeholder">
+  <p class="detail">Job title</p>
+  <p class="detail">City</p>
+  <p class="detail">Hobby</p>
+</div>
+
+<script>
+
+    const profile = document.getElementById("profile");
+    const avatar = document.getElementById("avatar");
+    const detail = document.getElementsByClassName("detail");
+    const first = document.querySelector(".detail");
+    const myName = document.getElementById("profileName");
+
+    myName.textContent = "Anum";
+    detail[0].textContent = "Student";
+    detail[1].textContent = "Freehold";
+    detail[2].textContent = "Writing";
+
+    avatar.setAttribute("alt", "A girl with dark brown hair and brown eyes");
+    profile.style.backgroundColor = "lightyellow";
+    myName.style.color = "darkred";
+
+const parenth = detail[0].parentElement;
+console.log(parenth.id);
+console.log(profile.childNodes.length);
+console.log(profile.firstChild.nodeName);
+console.log(profile.lastChild.nodeName);
+
+console.log(profileName.textContent);
+console.log(detail[0].textContent);
+console.log(detail[1].textContent);
+console.log(detail[2].textContent);
+
+</script>
+
+</body>
+</html>
